@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.60.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="App.xaml.cs" />
+    <Compile Remove="Page\Create_PDF\Create_PDF.cs" />
+    <Compile Remove="Model\Draw_Model.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Style\" />
+    <Folder Include="Style\Structure_Button\" />
+    <Folder Include="Page\" />
+    <Folder Include="Page\Draw_Text \" />
+    <Folder Include="Page\Draw_Circle\" />
+    <Folder Include="Page\Draw_Line\" />
+    <Folder Include="Page\Draw_Pen\" />
+    <Folder Include="Page\Draw_Tech_Talk\" />
+    <Folder Include="Page\Draw_Animation\" />
+    <Folder Include="Page\Draw_Clock\" />
+    <Folder Include="Page\Game_Connect_Four\" />
+    <Folder Include="Page\Draw_Rectangle_Number\" />
+  </ItemGroup>
+</Project>
